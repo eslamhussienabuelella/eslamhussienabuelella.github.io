@@ -119,24 +119,3 @@ footer{
   .projects{ grid-template-columns: 1fr; }
   header{ padding: 34px 0; }
 }
-.meta{
-  margin-top: 10px;
-  opacity: 0.95;
-}
-
-.highlights ul, .bullets{
-  margin: 10px 0 0 18px;
-}
-
-.highlight{
-  background: #fbfbfe;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 10px;
-  padding: 12px;
-  margin-top: 12px;
-}
-
-.bullets li{
-  margin-bottom: 6px;
-}
-
