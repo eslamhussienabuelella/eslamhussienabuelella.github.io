@@ -132,24 +132,41 @@ body {
   line-height: 1.6;
 }
 
-/* ===== PROJECT THUMBNAILS (NEW) ===== */
-.project-card {
-  overflow: hidden; /* clips image corners nicely */
+/* ===== PROJECT THUMBNAILS (FIX OVERFLOW) ===== */
+.card.project-card{
+  padding: 0;              /* remove padding so image fits perfectly */
+  overflow: hidden;        /* IMPORTANT: clips any overflow */
 }
 
-.project-img {
+.card.project-card .project-img{
   width: 100%;
-  height: 170px;
+  height: 190px;
+  display: block;          /* removes inline gap */
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 14px;
-  display: block;
+  border-radius: 0;        /* card handles rounding now */
+  margin: 0;               /* avoid pushing outside */
+}
+
+/* add spacing back for the text content */
+.card.project-card h3,
+.card.project-card p,
+.card.project-card .tags,
+.card.project-card .link{
+  padding: 0 26px;         /* match your card padding */
+}
+
+.card.project-card h3{ margin-top: 18px; }
+.card.project-card .link{ padding-bottom: 22px; display: inline-block; }
+
+/* hover zoom stays inside the card */
+.card.project-card:hover .project-img{
+  transform: scale(1.03);
+}
+
+.card.project-card .project-img{
   transition: transform 0.25s ease;
 }
 
-.project-card:hover .project-img {
-  transform: scale(1.03);
-}
 
 /* ===== TAGS / BADGES ===== */
 .tags {
