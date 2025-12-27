@@ -6,14 +6,19 @@
   <title>Eslam Abuelella | Data Scientist</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+
+<body id="top">
 
 <header class="hero">
   <h1>Eslam Abuelella</h1>
   <p class="subtitle">
     Data Scientist | MSc Data Science | MSc Petroleum Geology | Python • ML • PySpark • SQL
   </p>
+
   <nav class="nav">
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
     <a href="https://github.com/eslamhussienabuelella" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank" rel="noopener">LinkedIn</a>
     <a href="cv/Eslam_Abuelella_CV.pdf" target="_blank" rel="noopener">Download CV</a>
@@ -21,91 +26,190 @@
 </header>
 
 <main class="container">
-  <h2>Featured Projects</h2>
 
-  <section class="card">
-    <h3>CO₂ Emissions Prediction (PySpark)</h3>
-    <p>
-      Built scalable PySpark pipelines for preprocessing, feature engineering,
-      and regression modelling on large vehicle emissions data.
-    </p>
-    <p><strong>Tech:</strong> PySpark, Python, ML Pipelines</p>
-    <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Programming</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">R</span>
+          <span class="tag">SQL</span>
+          <span class="tag">PySpark</span>
+        </div>
+        <p>Data wrangling, analysis, scripting, automation, and reproducible workflows.</p>
+      </article>
+
+      <article class="card">
+        <h3>Machine Learning</h3>
+        <div class="tags">
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Classification</span>
+          <span class="tag">Regression</span>
+          <span class="tag">Imbalanced Learning</span>
+        </div>
+        <p>Model training, evaluation, feature engineering, and interpretation.</p>
+      </article>
+
+      <article class="card">
+        <h3>Data Engineering</h3>
+        <div class="tags">
+          <span class="tag">Spark ML</span>
+          <span class="tag">Pipelines</span>
+          <span class="tag">ETL</span>
+          <span class="tag">Big Data</span>
+        </div>
+        <p>Scalable pipelines for cleaning, transforming, and modeling large datasets.</p>
+      </article>
+
+      <article class="card">
+        <h3>Visualization & Tools</h3>
+        <div class="tags">
+          <span class="tag">Tableau</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Git/GitHub</span>
+          <span class="tag">Jupyter</span>
+        </div>
+        <p>Clear storytelling with dashboards, charts, and project documentation.</p>
+      </article>
+    </div>
   </section>
 
-  <section class="card">
-    <h3>Seismic Event Classification</h3>
-    <p>
-      End-to-end machine learning workflow to classify earthquake vs non-earthquake events,
-      focusing on robust evaluation and generalization.
-    </p>
-    <p><strong>Tech:</strong> Python, scikit-learn, Classification</p>
-    <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>CO₂ Emissions Prediction (PySpark)</h3>
+        <p>
+          Built scalable PySpark pipelines for preprocessing, feature engineering,
+          and regression modelling on large vehicle emissions data.
+        </p>
+        <div class="tags">
+          <span class="tag">PySpark</span>
+          <span class="tag">ML Pipelines</span>
+          <span class="tag">Regression</span>
+        </div>
+        <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
+      </article>
+
+      <article class="card">
+        <h3>Seismic Event Classification</h3>
+        <p>
+          End-to-end ML workflow to classify earthquake vs non-earthquake events,
+          focusing on robust evaluation and generalization.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Classification</span>
+        </div>
+        <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
+      </article>
+
+      <article class="card">
+        <h3>Linear Regression From Scratch</h3>
+        <p>
+          Implemented linear regression using matrix operations and dummy variables
+          to demonstrate core statistical foundations.
+        </p>
+        <div class="tags">
+          <span class="tag">NumPy</span>
+          <span class="tag">Linear Algebra</span>
+          <span class="tag">Regression</span>
+        </div>
+        <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
+      </article>
+
+      <article class="card">
+        <h3>SQL & Database Design</h3>
+        <p>
+          Designed relational schemas from ER diagrams and implemented analytical SQL queries.
+        </p>
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">ERD</span>
+          <span class="tag">Database Design</span>
+        </div>
+        <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
+      </article>
+
+      <article class="card">
+        <h3>PCA & Multivariate Analysis (R)</h3>
+        <p>
+          Applied PCA to explore multivariate relationships, reduce dimensionality,
+          and interpret latent structure in the data.
+        </p>
+        <div class="tags">
+          <span class="tag">R</span>
+          <span class="tag">PCA</span>
+          <span class="tag">Visualization</span>
+        </div>
+        <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
+      </article>
+
+      <article class="card">
+        <h3>Blackjack Game Design (Python)</h3>
+        <p>
+          Implemented a Blackjack card game focusing on game logic,
+          user interaction, and rule-based decision flow.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Logic</span>
+          <span class="tag">Control Flow</span>
+        </div>
+        <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
+      </article>
+    </div>
   </section>
 
-  <section class="card">
-    <h3>Linear Regression From Scratch</h3>
-    <p>
-      Implemented linear regression using matrix operations and dummy variables
-      to demonstrate core statistical foundations.
-    </p>
-    <p><strong>Tech:</strong> NumPy, Linear Algebra</p>
-    <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
-  </section>
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications" class="section">
+    <h2>Publications</h2>
 
-  <section class="card">
-    <h3>SQL & Database Design</h3>
-    <p>
-      Designed relational schemas from ER diagrams and implemented analytical SQL queries.
-    </p>
-    <p><strong>Tech:</strong> SQL, Database Design</p>
-    <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
-  </section>
-
-  <section class="card">
-    <h3>PCA & Multivariate Analysis (R)</h3>
-    <p>
-      Applied Principal Component Analysis to explore multivariate relationships,
-      reduce dimensionality, and interpret latent structure in the data.
-    </p>
-    <p><strong>Tech:</strong> R, PCA, Data Visualization</p>
-    <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
-  </section>
-
-  <section class="card">
-    <h3>Exploratory Data Analysis Exercise</h3>
-    <p>
-      Performed end-to-end exploratory data analysis, including data cleaning,
-      descriptive statistics, visualisation, and insight generation.
-    </p>
-    <p><strong>Tech:</strong> Python, Pandas, Data Visualization</p>
-    <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
-  </section>
-
-  <section class="card">
-    <h3>Blackjack Game Design (Python)</h3>
-    <p>
-      Designed and implemented a Blackjack card game as part of the 7143 portfolio,
-      focusing on game logic, user interaction, and rule-based decision flow.
-    </p>
-    <p><strong>Tech:</strong> Python, Game Logic, Control Flow</p>
-    <a class="link" href="#" target="_blank" rel="noopener">View Project →</a>
-  </section>
-
-  <h2>Publications</h2>
-
-  <section class="card">
-    <h3>Seismic Event Classification Using Machine Learning</h3>
-    <p>
-      Research-focused study applying machine learning techniques to classify
-      earthquake and non-earthquake seismic events, with emphasis on feature
-      engineering, model comparison, and evaluation.
-    </p>
-    <p><strong>Keywords:</strong> Machine Learning, Classification, Seismology</p>
-    <a class="link" href="#" target="_blank" rel="noopener">View Publication →</a>
+    <div class="grid">
+      <article class="card">
+        <h3>Seismic Event Classification Using Machine Learning</h3>
+        <p>
+          Research-focused study applying ML techniques to classify earthquake and
+          non-earthquake events, emphasizing feature engineering and evaluation.
+        </p>
+        <div class="tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Classification</span>
+          <span class="tag">Seismology</span>
+        </div>
+        <a class="link" href="#" target="_blank" rel="noopener">View Publication →</a>
+      </article>
+    </div>
   </section>
 
 </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-text">© <span id="year"></span> Eslam Abuelella • Data Scientist</p>
+
+    <div class="footer-actions">
+      <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email</a>
+      <a class="btn" href="cv/Eslam_Abuelella_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn" href="https://github.com/eslamhussienabuelella" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/YOUR-LINK" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // auto-update footer year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
