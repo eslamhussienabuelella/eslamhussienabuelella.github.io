@@ -114,9 +114,7 @@ img {
 }
 
 /* IMPORTANT: allow grid children to shrink (prevents overflow) */
-.grid > * {
-  min-width: 0;
-}
+.grid > * { min-width: 0; }
 
 /* ===== CARDS ===== */
 .card {
@@ -141,6 +139,53 @@ img {
 .card p {
   margin: 10px 0;
   line-height: 1.6;
+}
+
+/* ===== SKILLS: grouped + circular logos (NEW / FIXED) ===== */
+.skills-group h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+/* each group shows many small circular logos */
+.skill-badges {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skill-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+/* enforce SMALL circular logos (prevents huge SVGs) */
+.skill-badge img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+
+  border-radius: 999px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.skill-badge span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* small note under some groups */
+.skills-note {
+  margin: 10px 0 0;
+  font-size: 12px;
+  opacity: 0.8;
 }
 
 /* ===== PROJECT THUMBNAILS (FIX OVERFLOW) ===== */
@@ -278,6 +323,9 @@ img {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; }
+
+  /* skills: fewer columns on medium screens */
+  .skill-badges { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 @media (max-width: 600px) {
@@ -296,4 +344,7 @@ img {
 
   .card.project-card .link { padding-bottom: 18px; }
   .card.project-card .project-img { height: 150px; }
+
+  /* skills: fewer columns on small screens */
+  .skill-badges { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
