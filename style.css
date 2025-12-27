@@ -1,77 +1,54 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
+/* ABOUT SECTION (matches the mockup: centered title, photo, centered paragraphs) */
+.about {
+  padding: clamp(3.5rem, 6vw, 5.5rem) 1.25rem;
+  background: #ffffff;
+  color: #111;
+}
+
+.about__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__title {
+  font-size: clamp(3.5rem, 7vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 clamp(1.75rem, 3vw, 2.75rem);
+}
+
+.about__photo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto clamp(1.75rem, 3vw, 2.75rem);
+}
+
+/* Big rounded-square avatar placeholder look */
+.about__photo {
+  width: clamp(170px, 22vw, 240px);
+  height: clamp(170px, 22vw, 240px);
+  border-radius: 28px;
+  object-fit: cover;
+  background: #d9d9d9;        /* shows as placeholder if image doesn't load */
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Text block centered like the image */
+.about__text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about__text p {
+  margin: 0 auto 1.6rem;
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
+  line-height: 1.8;
   color: #222;
 }
 
-.hero {
-  background: #2f66ff;
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  margin: 0 0 10px;
-  font-size: 44px;
-}
-
-.subtitle {
-  margin: 0 0 14px;
-  font-size: 16px;
-  opacity: 0.95;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 14px;
-  font-weight: 600;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.container h2 {
-  text-align: center;
-  margin: 0 0 25px;
-  font-size: 26px;
-}
-
-.card {
-  background: #fff;
-  padding: 24px 26px;
-  margin: 18px auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.card h3 {
-  margin: 0 0 10px;
-  font-size: 20px;
-}
-
-.card p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
-
-.link {
-  display: inline-block;
-  margin-top: 8px;
-  color: #2f66ff;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
+/* Slight extra space between the two paragraphs (like the mockup) */
+.about__text p:last-child {
+  margin-bottom: 0;
 }
