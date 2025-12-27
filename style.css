@@ -5,12 +5,38 @@ body {
   color: #222;
 }
 
-.hero {
-  background: #2f66ff;
-  color: #fff;
+
+.hero{
+  /* banner image */
+  background-image: url("images/banner2.jpg");
+  background-size: cover;        /* fill the header area */
+  background-position: center;   /* keep the center visible */
+  background-repeat: no-repeat;
+
+  /* banner sizing + layout */
+  min-height: 320px;
   padding: 60px 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* make text readable on top of the image */
+  color: #fff;
+  position: relative;
 }
+
+/* optional: dark overlay for readability */
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero > *{
+  position: relative; /* keep text above overlay */
+}
+
 
 .hero h1 {
   margin: 0 0 10px;
