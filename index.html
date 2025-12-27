@@ -1,128 +1,47 @@
+<!-- index.html (ONLY the About section + minimal HTML wrapper) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eslam Abuelella | Data Scientist</title>
-  <meta name="description" content="Portfolio of Eslam Abuelella — Data Scientist (Python, ML, PySpark, SQL)." />
+  <title>Portfolio | About</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="hero">
-    <div class="container hero__inner">
-      <div class="hero__text">
-        <h1 class="hero__name">Eslam Abuelella</h1>
-        <p class="hero__subtitle">Data Scientist | MSc Data Science | Python • ML • PySpark • SQL</p>
 
-        <nav class="hero__links" aria-label="Primary">
-          <a class="btn btn--primary" href="#about">About</a>
-          <a class="btn" href="#projects">Projects</a>
-          <a class="btn" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+  <section id="about" class="about">
+    <div class="about__wrap">
+      <h1 class="about__title">About</h1>
 
-  <main>
-    <!-- ABOUT SECTION (matches the uploaded image layout) -->
-    <section id="about" class="about">
-      <div class="container about__container">
-        <h2 class="about__title">About</h2>
+      <!-- Placeholder personal picture -->
+      <img
+        class="about__image"
+        src="images/about/1.jpg"
+        alt="Personal photo placeholder"
+        loading="lazy"
+      />
 
-        <!-- Personal picture placeholder -->
-        <div class="about__photo-wrap">
-          <img
-            class="about__photo"
-            src="images/about/1.jpg"
-            alt="Portrait"
-            loading="lazy"
-            onerror="this.classList.add('is-missing'); this.alt='(Add your photo at images/about/1.jpg)';"
-          />
-          <p class="about__photo-hint">Place your photo at <code>images/about/1.jpg</code></p>
-        </div>
-
-        <div class="about__text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet dolor dolor.
-            Suspendisse ligula elit, hendrerit ut bibendum quis, facilisis vitae est. Vivamus vitae
-            felis sit amet sem rhoncus euismod. Praesent sem dolor, ullamcorper nec tempor quis,
-            pulvinar sed dolor. Quisque pretium felis ac nisi posuere, id commodo lorem porttitor.
-            Nam in condimentum ex. Nam accumsan nisl turpis, sed tempus dolor volutpat non.
-            Proin id enim feugiat ipsum consectetur mattis. Nam blandit venenatis nisi, convallis
-            imperdiet nisi condimentum at.
-          </p>
-
-          <p>
-            Duis convallis ligula sed pretium tristique. Duis nunc risus, lacinia eget cursus id,
-            suscipit ac metus. Sed varius sed tortor congue aliquam. In in dapibus diam, in auctor
-            purus. Praesent vitae tristique diam. Donec tincidunt hendrerit tortor, vitae lobortis
-            purus rutrum sit amet. Nunc non arcu vitae leo rhoncus tincidunt vel sed urna. Sed sed
-            efficitur dui. Morbi id velit nisi. Fusce luctus placerat purus eu cursus.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS (simple placeholder) -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section__title">Featured Projects</h2>
-
-        <div class="grid">
-          <article class="card">
-            <h3 class="card__title">Seismic Event Classification</h3>
-            <p class="card__desc">
-              Classify low-magnitude seismic events using ML models and feature engineering.
-            </p>
-            <a class="card__link" href="#" aria-label="Open project">View project →</a>
-          </article>
-
-          <article class="card">
-            <h3 class="card__title">CO₂ Emissions (PySpark)</h3>
-            <p class="card__desc">
-              Large-scale analysis and regression modeling on Canada vehicle fuel consumption data.
-            </p>
-            <a class="card__link" href="#" aria-label="Open project">View project →</a>
-          </article>
-
-          <article class="card">
-            <h3 class="card__title">Social Inclusion Network Model</h3>
-            <p class="card__desc">
-              Agent-based opinion dynamics with rewiring and inclusion metrics.
-            </p>
-            <a class="card__link" href="#" aria-label="Open project">View project →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT (simple placeholder) -->
-    <section id="contact" class="section section--alt">
-      <div class="container">
-        <h2 class="section__title">Contact</h2>
-        <p class="muted">
-          Add your email, GitHub, and LinkedIn here.
+      <div class="about__text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet dolor dolor.
+          Suspendisse ligula elit, hendrerit ut bibendum quis, facilisis vitae est. Vivamus vitae
+          felis sit amet sem rhoncus euismod. Praesent sem dolor, ullamcorper nec tempor quis,
+          pulvinar sed dolor. Quisque pretium felis ac nisi posuere, id commodo lorem porttitor.
+          Nam in condimentum ex. Nam accumsan nisl turpis, sed tempus dolor volutpat non. Proin id
+          enim feugiat ipsum consectetur mattis. Nam blandit venenatis nisi, convallis imperdiet
+          nisi condimentum at.
         </p>
 
-        <div class="contact">
-          <a class="btn btn--primary" href="mailto:YOUR_EMAIL_HERE">Email</a>
-          <a class="btn" href="https://github.com/eslamhussienabuelella" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINK" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+        <p>
+          Duis convallis ligula sed pretium tristique. Duis nunc risus, lacinia eget cursus id,
+          suscipit ac metus. Sed varius sed tortor congue aliquam. In in dapibus diam, in auctor
+          purus. Praesent vitae tristique diam. Donec tincidunt hendrerit tortor, vitae lobortis
+          purus rutrum sit amet. Nunc non arcu vitae leo rhoncus tincidunt vel sed urna. Sed sed
+          efficitur dui. Morbi id velit nisi. Fusce luctus placerat purus eu cursus.
+        </p>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> Eslam Abuelella</p>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
