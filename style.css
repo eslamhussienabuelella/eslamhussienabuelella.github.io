@@ -5,38 +5,39 @@ body {
   color: #222;
 }
 
-
-.hero{
+/* ===== HERO / BANNER ===== */
+.hero {
   /* banner image */
-  background-image: url("https://github.com/eslamhussienabuelella/eslamhussienabuelella.github.io/blob/10f34967149dfa56398eee0339f15cb07504a27b/images/banner2%23.png");
-  background-size: cover;        /* fill the header area */
-  background-position: center;   /* keep the center visible */
+  background-image: url("images/banner.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 
-  /* banner sizing + layout */
+  /* layout */
   min-height: 320px;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 
-  /* make text readable on top of the image */
+  /* text */
   color: #fff;
   position: relative;
 }
 
-/* optional: dark overlay for readability */
-.hero::before{
+/* dark overlay */
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
 }
 
-.hero > *{
-  position: relative; /* keep text above overlay */
+/* keep content above overlay */
+.hero > * {
+  position: relative;
 }
-
 
 .hero h1 {
   margin: 0 0 10px;
@@ -60,6 +61,7 @@ body {
   text-decoration: underline;
 }
 
+/* ===== MAIN CONTENT ===== */
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -77,27 +79,8 @@ body {
   padding: 24px 26px;
   margin: 18px auto;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .card h3 {
-  margin: 0 0 10px;
-  font-size: 20px;
-}
-
-.card p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
-
-.link {
-  display: inline-block;
-  margin-top: 8px;
-  color: #2f66ff;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
+  margin: 0 0 10p
