@@ -242,6 +242,27 @@ img {
   font-weight: 700;
 }
 
+
+
+/* ===== CERTIFICATIONS LIST (no cards) ===== */
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cert-list li {
+  margin-bottom: 1.25rem;
+}
+
+.cert-list li .tags {
+  margin-top: 0.5rem;
+}
+
+
+
+
+
 /* ===== LINKS ===== */
 .link {
   display: inline-block;
@@ -272,6 +293,11 @@ img {
   justify-items: center;
   text-align: center;
 }
+
+
+
+
+
 
 .footer-text { margin: 0; }
 
